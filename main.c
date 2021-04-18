@@ -41,6 +41,9 @@ int main(){
 		else if(menu == 5){
 			saveData(s, index);
 		}
+		else if(menu == 6){
+			searchName(s, count);
+		}
 	}
 	return 0;
 }
