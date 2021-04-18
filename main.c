@@ -5,6 +5,9 @@ int main(){
 	Product s[20];
 	int index=0;
 	int count=0, menu;
+
+	count = loadData(s);
+	index = count;
 #ifdef DEBUG
 	printf("=>DEBUGMODE");
 #endif
@@ -34,6 +37,9 @@ int main(){
 				deleteProduct(&s[no-1]);
 				count--;
 			}
+		}
+		else if(menu == 5){
+			saveData(s, index);
 		}
 	}
 	return 0;

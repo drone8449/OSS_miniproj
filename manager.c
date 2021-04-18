@@ -19,7 +19,7 @@ int selectDataNo(Product s[], int count){
 }
 
 int loadData(Product s[]){
-	int count = 0;
+	int count = 0; int i = 0;
 	FILE *fp;
 	fp = fopen("product.txt", "rt");
 	if(fp==NULL)
@@ -27,7 +27,7 @@ int loadData(Product s[]){
 		printf("\n=> 파일 없음!\n");
 		return 0;
 	}
-	for(i = 0; i < 20; i++){
+	for(; i < 20; i++){
 		fscanf(fp, "%s", s[i].name);
 		if(feof(fp)) break;
 		fscanf(fp, "%d", &s[i].weight);
