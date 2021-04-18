@@ -47,6 +47,9 @@ int main(){
 		else if(menu == 7){
 			searchPrice(s, count);
 		}
+		else if(menu == 8){
+			searchStar(s, count);
+		}
 	}
 	return 0;
 }
