@@ -44,6 +44,9 @@ int main(){
 		else if(menu == 6){
 			searchName(s, count);
 		}
+		else if(menu == 7){
+			searchPrice(s, count);
+		}
 	}
 	return 0;
 }
