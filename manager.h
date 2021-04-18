@@ -4,3 +4,5 @@
 
 void listProduct(Product s[], int count);
 int selectDataNo(Product s[], int count);
+int loadData(Product s[]);
+void saveData(Product s[], int count);
