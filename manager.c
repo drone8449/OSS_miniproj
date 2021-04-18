@@ -53,3 +53,23 @@ void saveData(Product s[], int count){
 	fclose(fp);
 	printf("=> 저장됨!");
 }
+
+void searchName(Product *s, int count){
+	int scnt = 0;
+	char search[20];
+
+	printf("검색할 이름? ");
+	scanf("%s", search);
+
+	printf(" No  Name   weight   price   star  c_star\n");
+	for(int i = 0; i < count; i++){
+		if(s[i].weight == -1) continue;
+		if(strstr(s[i].name, search)){
+			printf("%2d ", i+1);
+			readProduct(&s[i]);
+			scnt++;
+		}
+	}
+	if(scnt == 0) printf("=> 검색된 데이터 없음!");
+	printf("\n");
+}
