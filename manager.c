@@ -98,7 +98,7 @@ void searchStar(Product *s, int count){
         int scnt = 0;
         int search = 0;
 
-        printf("검색할 가격? ");
+        printf("검색할 별점? ");
         scanf("%d", &search);
 
         printf(" No  Name   weight   price   star  c_star\n");
